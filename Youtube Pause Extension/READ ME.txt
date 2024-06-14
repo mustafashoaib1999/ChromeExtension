@@ -1,0 +1,3 @@
+Extract the zipfolder
+Go to chrome , manage extensions
+Click Load unpacked and load the extension

@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Pause Youtube",
+  "version": "1.0.0",
+  "description": " It pauses YouTube videos when you leave the tab.",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
